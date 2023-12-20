@@ -14,7 +14,9 @@ body {
     justify-content: center;
     flex-direction: column;
     gap: 5px;
-    background: linear-gradient(90deg, rgba(91,30,159,1) 0%, rgba(77,39,182,1)100%);
+    background: rgb(26,27,59);
+    background: linear-gradient(180deg, rgba(26,27,59,1) 50%, rgba(9,18,99,1) 100%);
+
 }
 
 body h2 {
@@ -25,6 +27,7 @@ main {
     background-color: white;
     padding: 10px;
     border-radius: 10px;
+    border: 1px solid black;
     width: 100%;
     max-width: 300px;
     min-height: 200px;

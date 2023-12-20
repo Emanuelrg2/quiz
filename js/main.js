@@ -6,7 +6,7 @@ const content = document.querySelector(".content");
 const contentFinish = document.querySelector(".finish");
 const btnRestart = document.querySelector(".finish button");
 
-import questions from "./questions"
+import questions from "./questions.js";
 
 let currentIndex = 0;
 let questionsCorrect= 0;
@@ -21,7 +21,7 @@ btnRestart.onclick = () => {
 };
 
 function nextQuestion(e) {
-    if (e.target.getAtribute("data-correct") === "true"){
+    if (e.target.getAtribute("data-correct") === "true") {
         questionsCorrect++;
     }
 
@@ -41,7 +41,7 @@ function finish() {
 
 function loadQuestion() {
     spnQtd.innerHTML = `${currentIndex + 1}/${questions.length}`;
-    const item = questions [currentIndex];
+    const item = questions[currentIndex];
     answers.innerHTML = "";
     question.innerHTML = item.question
 
@@ -55,7 +55,7 @@ function loadQuestion() {
         answers.appendChild(div);
     });
 
-    document.querySelectorAll(".answer").forEach((item) =>{
+    document.querySelectorAll(".answer").forEach((item) => {
         item.addEventListener("click", nextQuestion);
     });
 }

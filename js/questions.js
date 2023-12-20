@@ -27,10 +27,9 @@ export default [
     {
         question: "Qual é o idioma oficiial da Suíça?",
         answers: [
-            { option: "Alemão, Francês, Italiano e Suíço" },
-            { option: "Alemão, Francês e Italiano, Romanche" },
-            { option: "Alemão, Francês e Suíço" },
+            { option: "Alemão, Francês, Italiano e Suíço", correct: false },
+            { option: "Alemão, Francês e Suíço", correct: false },
+            { option: "Alemão, Francês, Italiano e Romanche", correct: true },
         ],
         },      
-    
-]
+];
