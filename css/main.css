@@ -14,13 +14,15 @@ body {
     justify-content: center;
     flex-direction: column;
     gap: 5px;
-    background: rgb(26,27,59);
-    background: linear-gradient(180deg, rgba(26,27,59,1) 50%, rgba(9,18,99,1) 100%);
+    background-image: url(./img/GS_20170503_HandolAir_0143_Pan_resized.jpg);
+    background-size: cover;
 
 }
 
-body h2 {
-    color: white;
+body h1 {
+    color: goldenrod;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+      
 }
 
 main {
@@ -60,8 +62,13 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    background-color: #008ccc;
-    color: white;
+    background-color: goldenrod;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button:hover{
+    background-color: rgb(146, 111, 25);
 }
 
 .finish {

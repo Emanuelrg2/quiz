@@ -4,36 +4,36 @@
 
 export default [
     {
-        question: { title: "Qual é a capital da Nigéria?", flag: 'bandeira' },
+        question:{title: "Qual desses países não fazem parte do continente asiático?", flag: 'bandeira'},
         answers: [
-            { option: "Abuja", correct: true },
-            { option: "Cidade do Cabo", correct: false },
-            { option: "Luanda", correct: false },
+            { option: "Laos", correct: false },
+            { option: "Benin", correct: true  },
+            { option: "India", correct: false },
         ],
 
     },
     {
-        question: {title: "Qual é o país mais populoso do mundo?",flag: 'bandeira' },
+        question:{title: "Qual é o país mais populoso do mundo?", flag: 'bandeira'},
         answers: [
-            { option: "China", correct: false },
             { option: "Indía", correct: true },
+            { option: "China", correct: false },
             { option: "Paquistão", correct: false },
         ],
     },
     {
-        question: {title: "Quantos continentes existem?", flag: 'bandeira'},
+        question: {title: "Qual é o país mais extenso do continente americano?", flag: 'bandeira'},
          answers: [
-            { option: "5", correct: false },
-            { option: "6", correct: true },
-            { option: "4", correct: false },
+            { option: "Brasil", correct: false },
+            { option: "México", correct: false },
+            { option: "Estados Unidos", correct: true },
         ],
     },
     {
         question: {title: "Qual é o idioma oficiial da Suíça?", flag: 'bandeira'},
         answers: [
             { option: "Alemão, Francês, Italiano e Suíço", correct: false },
-            { option: "Alemão, Francês e Suíço", correct: false },
             { option: "Alemão, Francês, Italiano e Romanche", correct: true },
+            { option: "Alemão, Francês e Suíço", correct: false },
         ],
     },
 ];
