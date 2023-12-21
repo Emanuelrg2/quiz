@@ -21,7 +21,8 @@ btnRestart.onclick = () => {
 };
 
 function nextQuestion(e) {
-    if (e.target.getAtribute("data-correct") === "true") {
+    console.log('e>>>> ',e)
+    if (e.target.getAttribute("data-correct") === "true") {
         questionsCorrect++;
     }
 
@@ -43,7 +44,7 @@ function loadQuestion() {
     spnQtd.innerHTML = `${currentIndex + 1}/${questions.length}`;
     const item = questions[currentIndex];
     answers.innerHTML = "";
-    question.innerHTML = item.question
+    question.innerHTML = item.question.title
 
     item.answers.forEach((answer) => {
         const div = document.createElement("div");
